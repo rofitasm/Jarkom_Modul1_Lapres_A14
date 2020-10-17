@@ -19,7 +19,7 @@ Laporan Resmi Modul 1 Praktikum Jaringan Komputer
     -	Masukkan command ```http.host == testing.mekanis.me``` pada Display Fitur 
     -	Pada bagian Hypertext Transfer Protocol, terlihat bahwa webserver yang digunakan adalah **nginx/1/14/0 (Ubuntu)**, dengan destination port 80 (HTTP)
 
-![image](1.jpeg)
+![image](1.jpg)
 #
 
 ### Soal2
@@ -28,7 +28,7 @@ Laporan Resmi Modul 1 Praktikum Jaringan Komputer
     -	Kemudian pada text filter dituliskan nama file **Tim_Kunjungan_Kerja_BAKN_DPR_RI_ke_Sukabumi141436.jpg**.
     -	Pilih file tersebut kemudian Save pada direktori yang diinginkan.
 
-![image](2.jpeg)
+![image](2.jpg)
 #
 
 ### Soal3
@@ -45,20 +45,20 @@ Laporan Resmi Modul 1 Praktikum Jaringan Komputer
 4.	Temukan paket dari web-web yang menggunakan basic authentication method!
 -	Masukkan command ```http.authbasic``` pada Display Filter
 
-![image](4.jpeg)
+![image](4.jpg)
 #
 
 ### Soal5
 5.	Ikuti perintah di aku.pengen.pw! Username dan password bisa didapatkan dari file .pcapng!
 - Masukkan command ```http.host == aku.pengen.pw && http.authbasic``` pada Display Filter
 
-![image](5.jpeg)
+![image](5.jpg)
 
 - Pada salah satu paket, lihat pada bagian (Hypertext Transfer Protocol -> Authorization ->  Credential, username dan password:
     - Username: **kakakgamtenk**
     - Password: **hartatahtabermuda**
 
-![image](5.jpeg)
+![image](5.jpg)
 #
 
 ### Soal6

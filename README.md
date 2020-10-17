@@ -110,7 +110,7 @@ Your Super Mega Ultra Rare Hint = nama pdf-nya "Yes.pdf"
 8.	Cari objek apa saja yang didownload (RETR) dari koneksi FTP dengan Microsoft FTP Service!
 -   Masukkan command ```ftp.request.command == RETR``` pada Display Filter
 
-![image](assets/8.JPG)
+![image](assets/8.jpg)
 
 -   Untuk mencari koneksi dengan Microsoft FTP Service, maka kami cari terlebih dahulu IP nya dengan command ```ftp.response.arg contains "Microsoft FTP Service"```
 
@@ -119,7 +119,7 @@ Your Super Mega Ultra Rare Hint = nama pdf-nya "Yes.pdf"
 -   Lalu dapat dilihat bahwa dari Response Microsoft FTP Service tersebut, IP nya adalah ```198.246.117.106```
 -   Sehingga command untuk menambahkan filter koneksi FTP yg menggunakan Microsoft FTP Service pada command sebelumnya adalah sebagai berikut ```ftp.request.command == RETR && ip.dst_host ==198.246.117.106```
 
-![image](assets/8a.jpg)
+![image](assets/8b.JPG)
 
 -	Sehingga dapat dilihat bahwa objek yang didownload dari koneksi FTP dengan Microsoft FTP Service berupa file **Readme** saja
 #

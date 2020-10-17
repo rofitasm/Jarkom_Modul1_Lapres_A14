@@ -27,7 +27,7 @@ Laporan Resmi Modul 1 Praktikum Jaringan Komputer
 1.	Sebutkan webserver yang digunakan pada "testing.mekanis.me"!
     -	Masukkan command ```http.host == testing.mekanis.me``` pada Display Fitur 
    
-    ![image](assets/1.jpg)
+    ![image](assets/1.JPG)
 
     -   Kemudian masuk ke TCP Stream dengan cara klik kanan pada paket lalu pilih Follow -> TCP Stream 
     -	Kemudian terlihat bahwa webserver yang digunakan adalah **nginx/1/14/0 (Ubuntu)**, dengan destination port 80 (HTTP)

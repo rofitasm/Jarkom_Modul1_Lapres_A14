@@ -49,7 +49,7 @@ Laporan Resmi Modul 1 Praktikum Jaringan Komputer
 ### Soal3
 3.	Cari username dan password ketika login di "ppid.dpr.go.id"!
 -	Menggunakan command filter: ```http.host == ppid.dpr.go.id && http.request.method == POST && http.request.uri contains login ```
--   Pada bagian HTML Form URL Encoded: application/x-www-form-urlencoded, bisa dilihat bahwa Username dan Passwordny adalah
+-   Pada bagian HTML Form URL Encoded, bisa dilihat bahwa Username dan Passwordny adalah
     -	Username: **10pemuda**
     -	Password: **guncangdunia**
 
@@ -112,13 +112,21 @@ Your Super Mega Ultra Rare Hint = nama pdf-nya "Yes.pdf"
 
 ![image](assets/8.jpg)
 
--	Sehingga dapat dilihat bahwa objek yang didownload dari koneksi FTP berupa file Readme dan file txt
+-   Untuk mencari koneksi dengan Microsoft FTP Service, maka kami cari terlebih dahulu IP nya dengan command ```ftp.response.arg contains "Microsoft FTP Service"```
 
+![image](assets/8a.jpg)
+
+-   Lalu dapat dilihat bahwa dari Response Microsoft FTP Service tersebut, IP nya adalah ```198.246.117.106```
+-   Sehingga command untuk menambahkan filter koneksi FTP yg menggunakan Microsoft FTP Service pada command sebelumnya adalah sebagai berikut ```ftp.request.command == RETR && ip.dst_host ==198.246.117.106```
+
+![image](assets/8a.jpg)
+
+-	Sehingga dapat dilihat bahwa objek yang didownload dari koneksi FTP dengan Microsoft FTP Service berupa file **Readme** saja
 #
 
 ### Soal9
 9.	Cari username dan password ketika login FTP pada localhost!
--   Masukkan command ```ftp contains PASS || ftp contains USER``` pada Display Filter
+-   Masukkan command ```ftp.request.command == PASS || ftp.request.command == USER``` pada Display Filter
 
 ![image](assets/9.jpg)
 
